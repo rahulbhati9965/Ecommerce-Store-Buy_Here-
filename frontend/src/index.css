@@ -1,0 +1,23 @@
+/* @import "flowbite"; */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: rgb(
+    51,
+    49,
+    49
+  ); /* Light gray, same as Tailwind's bg-gray-100 */
+}
+
+body {
+  background: #0f0f10;
+  color: #fff;
+}
+
+input,
+textarea {
+  color: #000;
+}
