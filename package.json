@@ -26,7 +26,9 @@
   "scripts": {
     "backend": "nodemon backend/index.js",
     "frontend": "npm run dev --prefix frontend",
-    "dev": "concurrently \"npm run frontend\" \"npm run backend\""
+    "dev": "concurrently \"npm run frontend\" \"npm run backend\"",
+    "build": "npm install --prefix frontend && npm run build --prefix frontend",
+    "start": "node backend/index.js"
   },
   "keywords": [],
   "author": "",
