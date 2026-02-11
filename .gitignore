@@ -9,6 +9,9 @@ node_modules/
 frontend/dist/
 dist/
 
+# user uploads (ephemeral on many hosts unless using a persistent disk)
+uploads/
+
 # logs
 npm-debug.log*
 yarn-debug.log*
