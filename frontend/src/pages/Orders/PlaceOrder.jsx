@@ -7,7 +7,6 @@ import ProgressSteps from "../../components/ProgressSteps";
 import Loader from "../../components/Loader";
 import { useCreateOrderMutation } from "../../redux/api/orderApiSlice";
 import { clearCartItems } from "../../redux/features/cart/cartSlice";
-import shipping from "./shipping";
 
 const PlaceOrder = () => {
   const navigate = useNavigate();
