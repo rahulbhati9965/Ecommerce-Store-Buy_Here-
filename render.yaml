@@ -3,12 +3,14 @@ services:
     name: major-ecommerce-store
     env: node
     branch: render-deploy
-    buildCommand: npm install && npm run build
+    buildCommand: npm install --include=dev && npm run build
     startCommand: npm start
     autoDeploy: true
     envVars:
       - key: NODE_ENV
         value: production
+      - key: NPM_CONFIG_PRODUCTION
+        value: "false"
       - key: MONGO_URI
         sync: false
       - key: JWT_SECRET
